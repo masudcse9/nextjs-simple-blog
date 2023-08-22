@@ -25,7 +25,7 @@ const page = () => {
 
   return (
     <div>
-      <div className="container mx-auto pt-20 pb-3 flex flex-row">
+      <div className="container mx-auto pr-10 pl-10 pt-20 pb-3 flex flex-row">
         <div class="grid grid-rows-6 grid-flow-col gap-4">
           <div>
             <div className="card card-compact w-100 bg-base-100 shadow-xl">

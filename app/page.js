@@ -18,7 +18,7 @@ const page = () => {
 
   return (
     <div>
-      <div className="container mx-auto pt-20 pb-3 flex flex-row">
+      <div className="container mx-auto pr-10 pl-10 pt-20 pb-3 flex flex-row">
         <div class="grid gap-x-8 gap-y-4 grid-cols-3">
           {content.map((data, index) => {
             return (

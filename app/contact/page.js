@@ -3,7 +3,7 @@ import React from "react";
 const page = () => {
   return (
     <div>
-      <div className="container mx-auto pt-20 pb-3 flex flex-row">
+      <div className="container mx-auto pr-10 pl-10 pt-20 pb-3 flex flex-row">
         <section class="bg-white dark:bg-gray-900">
           <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
             <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">
@@ -13,7 +13,7 @@ const page = () => {
               Got a technical issue? Want to send feedback about a beta feature?
               Need details about our Business plan? Let us know.
             </p>
-            <form action="#" class="space-y-8">
+            <div class="space-y-8">
               <div>
                 <label
                   for="name"
@@ -79,7 +79,7 @@ const page = () => {
               >
                 Submit
               </button>
-            </form>
+            </div>
           </div>
         </section>
       </div>
