@@ -1,20 +1,23 @@
 "use client";
 import Link from "next/link";
+import { useParams } from 'next/navigation'
 import React, { useEffect, useState } from "react";
 
 const page = () => {
   const [content, setContent] = useState([]);
+  const params = useParams();
+  const id = params['id'];
 
   useEffect(() => {
     (async () => {
       const res = await fetch(
-        "https://basic-blog.teamrabbil.com/api/post-newest"
+        `https://basic-blog.teamrabbil.com/api/post-list/${id}`
       );
       const data = await res.json();
       setContent(data);
-      console.log(data);
+      //console.log(data);
     })();
-  }, []);
+  }, [id]);
 
   return (
     <div>
