@@ -1,1 +1,1 @@
-https://github.com/masudcse9/nextjs-simple-blog
+https://nextjs-simple-blog-beta.vercel.app/
