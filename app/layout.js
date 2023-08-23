@@ -1,9 +1,9 @@
-'use client'
+// "use client";
 import MasterHeader from "@/components/MasterHeader";
 import "./globals.css";
 import { Inter } from "next/font/google";
 import MasterFooter from "@/components/MasterFooter";
-import { AppProgressBar as ProgressBar } from 'next-nprogress-bar';
+// import { AppProgressBar as ProgressBar } from "next-nprogress-bar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,17 +16,16 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
+        {/* <ProgressBar
+          height="4px"
+          color="#FF0000"
+          options={{ showSpinner: false }}
+          shallowRouting
+        /> */}
         <MasterHeader />
         {children}
-        <ProgressBar
-        height="4px"
-        color="#FF0000"
-        options={{ showSpinner: false }}
-        shallowRouting
-      />
-        <MasterFooter />        
+        <MasterFooter />
       </body>
-      
     </html>
   );
 }
